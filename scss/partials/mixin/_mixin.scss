@@ -1,0 +1,34 @@
+
+@mixin tiny-screen() {
+    @media only screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin small-screen() {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+
+@mixin goolge-font($font) {
+    $font: unquote($font);
+    @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+
+ 
+@mixin box-shadow($shadows...) {
+    box-shadow: $shadows;
+}
+
+
+
+@mixin margin($margin: 0px 0px 0px 0px) {
+    margin: em(nth($margin, 1)) em(nth($margin, 2)) em(nth($margin, 3)) em(nth($margin, 4));
+}
+@mixin padding($padding: 0px 0px 0px 0px) {
+    padding: em(nth($padding, 1)) em(nth($padding, 2)) em(nth($padding, 3)) em(nth($padding, 4));
+}

@@ -1,0 +1,53 @@
+
+
+$theme: Dark;
+
+
+$bg-btn--primary: #8ec73f;
+$bg-btn--secondary: #61882B;
+
+$bg--primary: #fff;
+$bg--secondary: #eee;
+$bg--black: #000;
+
+
+$text-color--primary: #fff;
+$text-color--secondary: #8ec73f;
+$text-color--7: #777;
+$text-color--9: #999;
+
+$clr-btn--primary-text: #fff;
+
+$clr-li--green: #73a330;
+$clr-li--gray-9: #999;
+
+$clr-txt--primary: #8ec73f;
+$clr-txt--white: #fff;
+$clr-txt--black: #000;
+
+$clr-head--primary: #8ec73f;
+
+$clr-p--primary: #000;
+$clr-p--secondary: #fff;
+
+
+
+
+
+$theme-color: #170a48;
+$header-hight: 60px;
+
+
+@if $theme == Dark {
+    $text-color: rgb(218, 218, 218);
+    $theme-color: #4a23d4;
+    $header-hight: 60px;
+}
+
+
+
+$text-font: "Alegreya Sans";
+$head-font: "Titillium Web";
+
+
+$col: col-width($columns: 8);

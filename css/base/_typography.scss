@@ -1,0 +1,68 @@
+%type_regular{
+	font-family: MyriadProRegular,tahoma,arial;
+}
+%type_regular_italic{
+	font-family: MyriadProRegularItalic,tahoma,arial;
+}
+%type_semibold{
+	font-family: MyriadProSemiBold,tahoma,arial;
+}
+%type_semibold_italic{
+	font-family: MyriadProSemiBoldItalic,tahoma,arial;
+}
+%type_bold{
+	font-family: MyriadProBold,tahoma,arial;
+}
+%type_light{
+	font-family: MyriadProLight,tahoma,arial;
+}
+
+%title_1_light{
+	@extend %type_light;
+	font-size: rem(48);
+	
+	@include mq_max($md){font-size: rem(40);}
+	@include mq_max($sm){font-size: rem(36);}
+	@include mq_max($xs){font-size: rem(32);}
+}
+
+%title_2_light{
+	@extend %type_light;
+	font-size: rem(36);
+
+	@include mq_max($md){font-size: rem(30);}
+	@include mq_max($sm){font-size: rem(26);}
+	@include mq_max($xs){font-size: rem(22);}
+}
+%title_1{
+	@extend %type_bold;
+	font-size: rem(48);
+
+	@include mq_max($md){font-size: rem(40);}
+	@include mq_max($sm){font-size: rem(36);}
+	@include mq_max($xs){font-size: rem(32);}
+}
+%title_2_semi{
+	@extend %type_semibold;
+	font-size: rem(32);
+	
+	@include mq_max($md){font-size: rem(28);}
+	@include mq_max($sm){font-size: rem(24);}
+	@include mq_max($xs){font-size: rem(20);}
+}
+%subtitle_1{
+	@extend %type_semibold;
+	font-size: rem(28);
+	
+	@include mq_max($md){font-size: rem(24);}
+	@include mq_max($sm){font-size: rem(22);}
+	@include mq_max($xs){font-size: rem(20);}
+}
+%subtitle_2{
+	@extend %type_semibold;
+	font-size: rem(24);
+	
+	@include mq_max($md){font-size: rem(22);}
+	@include mq_max($sm){font-size: rem(20);}
+	@include mq_max($xs){font-size: rem(18);}
+}

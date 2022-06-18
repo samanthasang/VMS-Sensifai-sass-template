@@ -1,0 +1,189 @@
+@font-face {
+  font-family: MyriadProLight;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MyriadProLight.otf"); }
+
+@font-face {
+  font-family: MyriadProSemiBold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MyriadProBoldSemiCondensed.otf") format("truetype"); }
+
+/* line 1, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header.scss */
+.header {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: 7.8125rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 10px 16px; }
+
+/* line 1, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_bottom.scss */
+.header-bottom {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 40px 20px 0; }
+
+/* line 1, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/btn/_btn.scss */
+.btn {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  line-height: 1;
+  border-radius: 5px;
+  height: 2.1875rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  padding: 0em; }
+  /* line 15, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/btn/_btn.scss */
+  .btn:hover {
+    background-color: #61882B; }
+
+/* line 26, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+body {
+  background: #fff;
+  margin: 0em 0em 0.625em 0em;
+  padding: 0em 0em 0.625em 0em;
+  font-family: MyriadMMRegular,tahoma,arial; }
+  /* line 31, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  body p {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 1.25em; }
+  /* line 34, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  body li {
+    font-family: MyriadProLight,tahoma,arial; }
+    /* line 36, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+    body li a {
+      background-color: inherit; }
+  /* line 43, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  body .navbar a:hover {
+    background-color: transparent; }
+  /* line 48, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  body a {
+    background-color: inherit; }
+    /* line 50, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+    body a:hover {
+      background-color: #61882B; }
+  /* line 54, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  body h1 {
+    background-color: rgba(0, 0, 0, 0);
+    color: #8ec73f;
+    font-size: 1.25em; }
+  /* line 57, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  body button {
+    padding: 0px 20px !important; }
+
+/* line 2, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+.header_top {
+  height: 3.125em;
+  width: 100%;
+  background-color: #fff;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* line 19, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+img {
+  height: 1.875em; }
+
+/* line 22, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+a {
+  margin: 0 0; }
+  /* line 24, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+  a:last-child {
+    font-size: 1em;
+    padding: 0.625em 0.9375em 0.625em 0.9375em;
+    height: 1.875em;
+    background-color: #8ec73f;
+    color: #fff;
+    border: none; }
+  /* line 28, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+  a:hover {
+    background-color: #61882B; }
+
+/* line 33, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+li a {
+  margin: 0 20px; }
+  /* line 35, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+  li a:last-child {
+    font-size: 1em;
+    padding: 0em 0em 0.625em 1.25em;
+    height: 1.875em;
+    background-color: rgba(0, 0, 0, 0);
+    color: #8ec73f;
+    font-size: 1em; }
+  /* line 39, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+  li a:first-child {
+    font-size: 1em;
+    padding: 0em 0em 1.25em 1.25em;
+    height: 1.625em;
+    background-color: rgba(0, 0, 0, 0);
+    color: #8ec73f;
+    font-size: 1em; }
+    /* line 42, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+    li a:first-child:hover {
+      background-color: transparent; }
+  /* line 46, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+  li a:hover {
+    background-color: transparent; }
+
+/* line 51, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/partials/headers/_header_top.scss */
+p {
+  font-size: 1em;
+  color: #fff;
+  line-height: 1.25; }
+
+/* line 64, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+.heading {
+  background: #000; }
+  /* line 66, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  .heading h1 {
+    margin: 150px 0 0 0;
+    font-family: MyriadProLight,tahoma,arial;
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    color: #8ec73f;
+    font-size: 3em; }
+  /* line 72, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  .heading p {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 1.75em;
+    font-family: MyriadProSemiBold,tahoma,arial; }
+  /* line 77, ../../../../../Users/luna/Desktop/Project/Sen/Sensifai/scss/style.scss */
+  .heading a {
+    background-color: inherit; }
+
+/*# sourceMappingURL=style.css.map */

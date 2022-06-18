@@ -1,0 +1,88 @@
+@import "partials/functions";
+@import "partials/colors";
+@import "partials/mixin";
+// @import "compass/reset";
+
+
+@include goolge-font("Alegreya+Sans");
+@include goolge-font("Titillium+Web");
+
+
+@for $i from 1 through 6 {
+    .col-#{$i} {
+        width: $i * 2em;
+    }
+}
+
+$speakers: a, b, c, d;
+
+@each $speaker in $speakers {
+    .#{$speaker}-profile {
+        background-color: #007;
+    }
+}
+
+$font-sizes: (
+    tiny: 8px,
+    small: 11px,
+    medium: 13px,
+    large: 18px,
+);
+@each $name, $size in $font-sizes {
+    .#{$name} {
+        font-size: $size;
+    }
+}
+
+%italicstyle {
+    font-style: italic;
+}
+
+$contrast: high;
+
+body {
+    @include blue-beans {
+        color: darken($bg-btn--primary, 10%);
+    }
+    @if $contrast == high {
+        color: $theme-color;
+    } 
+    @include warning($color: #007);
+    font: {
+        family: $head-font;
+    }
+    #header {
+        height: $header-hight;
+        width: 2 * $col;
+        font: {
+            family: $head-font;
+            size: em(50px);
+        }
+    }
+    p {
+        color: #007;
+        font: {
+            family: $text-font;
+        }
+        @include small-screen {
+            font: {
+                family: $head-font;
+            }
+        }
+        &:hover {
+            color: darken($theme-color, 10%);
+        }
+    }
+    a {
+        @extend #header;
+        @extend %italicstyle;
+        @include small-screen {
+            font: {
+                family: $head-font;
+            }
+        }
+        &:hover {
+            color: darken($theme-color, 10%);
+        }
+    }
+}

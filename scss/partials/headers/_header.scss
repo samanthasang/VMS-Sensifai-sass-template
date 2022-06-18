@@ -1,0 +1,18 @@
+.header {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    height: 7.8125rem;
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 0 10px 16px ;
+}

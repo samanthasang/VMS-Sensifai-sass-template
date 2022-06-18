@@ -1,0 +1,48 @@
+.btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	white-space: nowrap;
+	padding: rem(10) rem(20);
+	height: rem(35);
+	line-height: 1;
+	font-size: rem(16);
+	border-radius: 5px;
+	transition: color 0.15s ease-in-out,
+							background-color 0.15s ease-in-out;
+
+	/* states */
+	&:active{
+		transform: translateY(1px);
+	}
+	&:hover{
+		background-color: darken( color(green_8), 10%);
+	}
+
+	/* sizes */
+	&--md{
+		@extend %type_semibold;
+		font-size: rem(18);
+		padding: 0 rem(25);
+	}
+	&--lg{
+		@extend %type_semibold;
+		font-size: rem(20);
+		padding: rem(25) rem(25);
+	}
+	&--wide{}
+
+	/* colors */
+	&--green{
+		background-color: color(green_8);
+		color: color(white);
+	}
+	&--green-6{
+		background-color: color(green_6);
+		color: color(white);
+	}
+
+	/* types */
+	&--circle{}
+}

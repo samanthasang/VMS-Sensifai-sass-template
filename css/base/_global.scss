@@ -1,0 +1,21 @@
+html{
+	font-size: 16px;
+
+	@include mq_min($xlg){font-size: 18px;}
+	@include mq_min($xxlg){font-size: 20px;}
+}
+body {
+	@extend %type_regular;
+	font-size: 1rem;
+	line-height: 1.7;
+	direction: ltr;
+	text-align: left;
+	
+	&.menu-open{
+		overflow-y: hidden;
+		
+		@include mq_min($md){
+			padding-right: 17px;
+		}
+	}
+}

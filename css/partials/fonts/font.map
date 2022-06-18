@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "font.css",
+	"sources": [
+		"../../../scss/partials/fonts/font.scss"
+	],
+	"sourcesContent": [
+		"// @include goolge-font(\"Alegreya+Sans\");\n// @include goolge-font(\"Titillium+Web\");\n\n// @font-face {\n// \tfont-family: MyriadProLight;\n// \tfont-style: normal;\n// \tfont-weight: normal;\n// \tsrc: url('partials/fonts/MyriadProLight.eot');\n// }\n// @font-face {\n// \tfont-family: MyriadMMRegular;\n// \tfont-style: normal;\n// \tfont-weight: normal;\n// \tsrc: url('../fonts/regular/MyriadMMRegular-.eot');\n// \tsrc: url('../fonts/regular/MyriadMMRegular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */\n// \turl('../fonts/regular/MyriadMMRegular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/\n// \turl('../fonts/regular/MyriadMMRegular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/\n// \turl('../fonts/regular/MyriadMMRegular.ttf') format('truetype');\n// }"
+	],
+	"names": [],
+	"mappings": ""
+}

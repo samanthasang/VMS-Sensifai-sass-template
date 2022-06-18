@@ -1,0 +1,5 @@
+@mixin txt-primary($fontSize: em(16px), $color: $text-color--primary, $lineHeigh: 1.25) {
+    font-size: $fontSize;
+    color: $color;
+    line-height: $lineHeigh;
+}

@@ -1,0 +1,362 @@
+.section {
+    position: relative;
+    padding: rem(60) 15px;
+    background-color: color(white);
+  
+    @include mq_max($sm) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    &--white{
+      background-color: #FFFFFF;
+    }
+  
+    &--lightgray {
+      background-color: color(gray_e);
+    }
+  
+    &--intro {
+      min-height: 800px;
+      max-height: 2000px;
+      overflow: hidden;
+      padding-top: height(header);
+  
+      @include mq_max($md) {
+        padding-top: height(tablet_header);
+      }
+      @include mq_max($xs) {
+        padding-top: height(mobile_header);
+      }
+    }
+  
+    &--landing {
+      min-height: 100vh;
+      max-height: 2000px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      padding-top: rem(125);
+  
+      @include mq_max($md) {
+        padding-top: rem(125);
+      }
+      @include mq_max($xs) {
+        padding-top: rem(105);
+      }
+    }
+  
+    &--full-width {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    &--page-header {
+      min-height: rem(490);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  
+      @include mq_max($sm) {
+        min-height: rem(300);
+      }
+    }
+  
+    &--banner {
+      background-color: rgba(28, 8, 86, 0.8);
+      min-height: rem(600);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+      }
+    }
+  
+    &--dark {
+      background-color: #000000;
+    }
+  
+    &-darklayer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: block;
+      top: 0;
+      left: 0;
+  
+      &--grad {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&1+0,0.84+50,0+100 */
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1); /* IE6-9 */
+      }
+    }
+  
+    &-wrap {
+      margin: 0 auto;
+  
+      .section--xlg & {
+        max-width: width(xlg);
+      }
+  
+      .section--lg & {
+        max-width: width(lg);
+      }
+  
+      .section--xmd & {
+        max-width: rem(1280);
+      }
+  
+      .section--md & {
+        max-width: width(md);
+      }
+  
+      .section--sm1 & {
+        max-width: width(sm1);
+      }
+  
+      .section--sm2 & {
+        max-width: width(sm2);
+      }
+  
+      .section--xs1 & {
+        max-width: width(xs1);
+      }
+  
+      .section--xs2 & {
+        max-width: width(xs2);
+      }
+  
+      .section--landing & {
+        position: relative;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: rem(25) rem(15);
+        z-index: 3;
+        background-color: color(white);
+      }
+    }
+  
+    &-img {
+      max-width: 100%;
+    }
+  
+    &-header {
+      position: relative;
+      text-align: center;
+      margin-bottom: rem(50);
+      z-index: 3;
+      color: color(gray_7);
+  
+      .section--intro & {
+        padding: 0 rem(50) 0;
+        margin-bottom: 0;
+      }
+  
+      &--white {
+        color: color(white);
+      }
+  
+      &--bottom {
+        @include centered(false, true);
+        width: 60%;
+  
+        @include mq_max($md){
+          width: 90%;
+        }
+  
+        @include mq_max($xs){
+          width: 100%;
+        }
+      }
+  
+      .section--banner & {
+        @include centered(false, true);
+        text-align: left;
+        color: color(white);
+        width: 100%;
+        left: 0;
+        padding-left: rem(50);
+        padding-right: rem(50);
+  
+        @include mq_max($sm) {
+          padding: 0 rem(15);
+        }
+      }
+  
+      .section--dark & {
+        color: color(white);
+      }
+  
+      @include mq_max($sm) {
+        margin-bottom: rem(70);
+      }
+    }
+  
+    &-title {
+      @extend %title_2_semi;
+      line-height: 1;
+  
+      .section--landing & {
+        color: color(gray_7);
+        text-align: center;
+      }
+  
+      .section--banner &{
+        @extend %title_1_light;
+        color: color(green_8);
+        margin-bottom: rem(15);
+      }
+      .section--page-header & {
+        @extend %title_1;
+      }
+  
+      .section--intro & {
+        @extend %title_1_light;
+        text-align: left;
+        color: color(green_8);
+        margin-bottom: rem(30);
+      }
+  
+      .section--light-header &{
+        @extend %title_1_light;
+        text-transform: uppercase;
+        color: color(green_8);
+      }
+  
+      .section--dark & {
+        @extend %title_1_light;
+        text-transform: uppercase;
+        color: color(green_8);
+      }
+    }
+  
+    &-subtitle {
+      @extend %subtitle_2;
+      max-width: rem(600);
+      margin: rem(10) auto 0;
+      line-height: 1.2;
+  
+      .section--landing & {
+        color: color(gray_7);
+        text-align: center;
+      }
+  
+      .section--page-header &{
+        text-align: left;
+      }
+      .section--intro & {
+        @extend %subtitle_1;
+        max-width: rem(700);
+        margin: rem(10) 0;
+        text-align: left;
+      }
+  
+      .section--banner & {
+        @extend %subtitle_1;
+        margin-bottom: rem(20);
+        text-align: left;
+        margin-left: 0;
+        max-width: rem(900);
+  
+        @include mq_max($sm) {
+          max-width: 100%;
+        }
+      }
+  
+      .section--light-header &{
+        font-size: rem(16);
+        color: color(black);
+      }
+  
+      .section--dark &{
+        font-size: rem(16);
+      }
+  
+      @include mq_max($sm) {
+        margin-top: 5px;
+      }
+    }
+  
+    &-desc {
+      p {
+        color: color(gray_7);
+  
+        &:not(:last-child) {
+          margin-bottom: rem(15);
+        }
+      }
+    }
+  
+    &-footer {
+      text-align: center;
+      font-size: 0;
+      margin-top: rem(70);
+  
+      @include mq_max($sm) {
+        margin-top: 50px;
+      }
+      @include mq_max($xs) {
+        margin-top: 30px;
+      }
+    }
+  
+    &-back {
+      z-index: 1;
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  
+    &-separator {
+      position: absolute;
+      bottom: rem(-40);
+      right: 50%;
+      transform: translateX(50%);
+  
+      &:before,
+      &:after {
+        position: absolute;
+        top: 50%;
+        content: '';
+        width: rem(90);
+        height: 1px;
+        background-color: color(green_8);
+        display: block;
+      }
+  
+      &:before {
+        left: rem(30);
+      }
+  
+      &:after {
+        right: rem(30);
+      }
+  
+  
+      i {
+        display: block;
+        width: rem(20);
+        height: rem(20);
+        background-color: color(green_8);
+        transform: rotate(45deg);
+      }
+    }
+  }

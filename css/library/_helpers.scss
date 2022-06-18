@@ -1,0 +1,101 @@
+/**********************
+***** Block Styles ****
+***********************/
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hide {
+	display: none !important;
+}
+.show {
+	display: block !important;
+}
+.same-height{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	
+	&.row--center{
+		justify-content: center;
+	}
+}
+
+/**********************
+****** Text Styles ****
+***********************/
+.text-hide {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+.uppercase{ text-transform: uppercase; }
+.justify{ text-align: justify; }
+.text-green{ color: color(green_8) !important; }
+/**********************
+**** Object Styles ****
+***********************/
+.mouse{
+	display: inline-flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	width: rem(26);
+	height: rem(42);
+	opacity: 1;
+	border-radius: 15px 15px 10px 10px;
+	transition: all 0.2s ease-in-out;
+	border: 2px solid color(white);
+	margin-top: rem(25);
+
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: rem(50);
+	z-index: 3;
+	
+	&:after{
+		content: '';
+		position: relative;
+		height: rem(7);
+		top: rem(7);
+		width: 3px;
+		border-radius: 3px;
+		transform: translateX(0.75px);
+		background-color: color(white);
+		animation: scroll 1.5s infinite;
+		animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+	}
+}
+
+.infoWindow {
+	padding-right: 15px;
+	max-width: 200px;
+	
+	a{
+		color: inherit;
+	}
+	
+	h6{
+		@extend %type_bold;
+	}
+	p {
+		font-size: 14px;
+		@extend %type_regular;
+	}
+}
+.marker{
+	cursor: pointer;
+	margin-top: -22.5px;
+	overflow: hidden;
+	
+	> img{
+		width: 100%;
+	}
+}

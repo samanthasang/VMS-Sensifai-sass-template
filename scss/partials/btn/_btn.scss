@@ -1,0 +1,49 @@
+.btn {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+    line-height: 1;
+    border-radius: 5px;
+    height: 2.1875rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    padding: 0em ;
+    &:hover {
+        background-color: $bg-btn--secondary;
+    }
+}
+
+@mixin btn($fontSize: 16px, $height: 30px, $padding: 0px 0px 0px 0px) {
+    font-size: em($fontSize);
+    padding: em(nth($padding, 1)) em(nth($padding, 2)) em(nth($padding, 3)) em(nth($padding, 4));
+    height: em($height);
+}
+
+@mixin btn-bg-c-l($background :$bg-btn--primary, $color: $text-color--primary, $lighen: 0%) {
+    background-color: lighten($background, $lighen);
+    color: $color;
+    border: none;
+}
+@mixin btn-bg-c-d($background :$bg-btn--primary, $color: $text-color--primary, $darken: 0%) {
+    background-color: darken($background, $darken);
+    color: $color;
+    border: none;
+}
+@mixin txt-bg-c($fontSize: 16px, $background : transparent, $color: $clr-txt--primary, $darken: 0%) {
+    background-color: darken($background, $darken);
+    color: $color;
+    font-size: em($fontSize);
+}
+
+
+@mixin font($fontName: MyriadProRegular) {
+    @include goolge-font($fontName);
+    
+    font: {
+        family: MyriadProRegular,tahoma,arial;
+    }
+}

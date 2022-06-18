@@ -1,0 +1,67 @@
+/**
+ * z-indexes
+ * check z() in _function.scss
+ */
+ $z-layers: (
+	header: 100,
+	menu: 110,
+	modal:200,
+);
+
+/**
+ * media query breakpoints
+ */
+$xxs :400px;
+$xs :500px;
+$sm :800px;
+$md :1050px;
+$lg :1400px;
+$xlg: 1900px;
+$xxlg: 2500px;
+
+
+/**
+ * some useful dimensions
+ * check width() in _function.scss
+ */
+$widths: (
+	xlg: rem(1400),
+	lg: rem(1260),
+	md: rem(1050),
+	sm1: rem(800),
+	sm2: rem(750),
+	xs1: rem(600),
+	xs2: rem(550),
+);
+
+/**
+ * some useful dimensions
+ * check height() in _function.scss
+ */
+$heights: (
+	header: rem(125),
+	tablet_header: rem(80),
+	mobile_header: rem(70),
+);
+
+
+/**
+ * colors
+ * check color() in _function.scss
+ */
+$colors: (
+	white: #FFFFFF,
+	gray_f: #F5F5F5,
+	gray_e: #eeeeee,
+	gray_9: #9D9D9D,
+	gray_99: #999999,
+	gray_70: #707070,
+	gray_7: #777777,
+	gray_3: #333333,
+	gray_2: #202020,
+	black: #000000,
+
+	green_6: #61882B,
+	green_8: #8EC73F,
+	red_d: #D95C45
+);

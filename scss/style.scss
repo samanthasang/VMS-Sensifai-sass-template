@@ -1,0 +1,80 @@
+@font-face {
+	font-family: MyriadProLight;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/MyriadProLight.otf');
+}
+@font-face {
+	font-family: MyriadProSemiBold;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/MyriadProBoldSemiCondensed.otf') format('truetype');
+}
+@import "partials/fonts/font";
+@import "partials/function/functions";
+@import "partials/var/colors";
+@import "partials/mixin/mixin";
+@import "partials/headers/header";
+@import "partials/headers/header_top";
+@import "partials/headers/header_bottom";
+// @import "partials/library/reset";
+@import "partials/btn/btn";
+@import "partials/txt/txt";
+// @import "compass/reset";
+
+
+body {
+    background: $bg--primary;
+    @include margin($margin: 0px 0px 10px 0px);
+    @include padding($padding: 0px 0px 10px 0px);
+    font-family: MyriadMMRegular,tahoma,arial;
+    p {
+        @include txt-bg-c($fontSize: 20px,$color: #000);
+    }
+    li {
+        font-family: MyriadProLight,tahoma,arial;
+        a {
+            background-color: inherit;
+        }
+    }
+    .navbar {
+        a {
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+    a {
+        background-color: inherit;
+        &:hover {
+            background-color: $bg-btn--secondary;
+        }
+    }
+    h1 {
+        @include txt-bg-c($fontSize: 20px,$color: $text-color--secondary);
+    }
+    button {
+        padding: 0px 20px!important;
+    }
+}
+@include header_top();
+
+
+.heading {
+    background: #000;
+    h1{
+        margin: 150px 0 0 0;
+        font-family: MyriadProLight,tahoma,arial;
+        display: block;
+        @include txt-bg-c($fontSize: 48px,$darken: 0);
+    }
+    p {
+        
+        @include txt-bg-c($fontSize: 28px,$color: #000);
+        font-family: MyriadProSemiBold,tahoma,arial
+    }
+    a {
+        background-color: inherit;
+    }
+}
